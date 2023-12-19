@@ -9,7 +9,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold">关注推特<a style={{color: "blue"}} href="https://twitter.com/zisan_xyz">道士钟发白</a>获取最新脚本</h1>
         <p className="text-xs mt-2 text-gray-400"><a style={{color: "blue",fontSize:"20px"}} href="https://t.me/daoshi8080">TG群</a>进群免费领工具，会在tg群提前1小时发布工具</p>
         <Link
-          href={`https://github.com/BohengLiu/cia20-super-minter`}
+          href={`https://github.com/catsats/INJS_Mint`}
           target="_blank"
           className="flex items-center justify-center"
         >
