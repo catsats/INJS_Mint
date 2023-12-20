@@ -33,7 +33,7 @@ const Minter: React.FC = () => {
       const injectiveAddress = privateKey.toBech32();
 
       const amount = {
-        amount: new BigNumberInBase(0.03).toWei().toFixed(),
+        amount: new BigNumberInBase(0.0000000001).toWei().toFixed(),
         denom: "inj",
       };
 
@@ -46,12 +46,12 @@ const Minter: React.FC = () => {
       const msg = MsgSend.fromJSON({
         amount,
         srcInjectiveAddress: injectiveAddress,
-        dstInjectiveAddress: "inj15jy9vzmyy63ql9y6dvned2kdat2994x5f4ldu4",
+        dstInjectiveAddress: injectiveAddress,
       });
 
       const { signBytes, txRaw } = createTransaction({
         message: msg,
-        memo: 'ZGF0YToseyJwIjoiaW5qcmMtMjAiLCJvcCI6ImRlcGxveSIsInRpY2siOiJJTkpTIiwibWF4IjoiMTAwMDAwMDAwMCIsImxpbSI6IjIwMDAifQ==',
+        memo: 'ZGF0YToseyJwIjoiaW5qcmMtMjAiLCJvcCI6Im1pbnQiLCJ0aWNrIjoiSU5KUyIsImFtdCI6IjEwMDAifQ==',
         fee: {
           amount: [
             {
